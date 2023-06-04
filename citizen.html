@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancing Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>LINE CITIZEN</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" onclick="highlightColumn(this)">MII-FS219-O</th>
+                <th scope="col" onclick="highlightColumn(this)">MII-FT003-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FW092-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP157-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FC170-2-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP005-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP035-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP058-O</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="col1" onclick="highlightColumn(this)">~</td>
+                <td id="col2" onclick="highlightColumn(this)">~</td>
+                <td id="col3" onclick="highlightColumn(this)">2</td>
+                <td id="col4" onclick="highlightColumn(this)">2</td>
+                <td id="col5" onclick="highlightColumn(this)">~</td>
+                <td id="col6" onclick="highlightColumn(this)">11</td>
+                <td id="col7" onclick="highlightColumn(this)">2</td>
+                <td id="col8" onclick="highlightColumn(this)">~</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP067-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP068-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP069-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP096-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS094-O</th>
+                <th scope="col" onclick="highlightColumn(this)">CHN-FR052-O</th>
+                <th scope="col" onclick="highlightColumn(this)">CHN-FL022-O</th>
+                <th scope="col" onclick="highlightColumn(this)">PRI-FP156-O</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="col9" onclick="highlightColumn(this)">~</td>
+                <td id="col10" onclick="highlightColumn(this)">~</td>
+                <td id="col11" onclick="highlightColumn(this)">2</td>
+                <td id="col12" onclick="highlightColumn(this)">~</td>
+                <td id="col13" onclick="highlightColumn(this)">5</td>
+                <td id="col14" onclick="highlightColumn(this)">~</td>
+                <td id="col15" onclick="highlightColumn(this)">~</td>
+                <td id="col16" onclick="highlightColumn(this)">~</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP135-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP140-O</th>
+                <th scope="col" onclick="highlightColumn(this)">KBT-FP084-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FC183-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FC185-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FC186-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FG026-O</th>
+                <th scope="col" onclick="highlightColumn(this)"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="col17" onclick="highlightColumn(this)">7</td>
+                <td id="col18" onclick="highlightColumn(this)">3</td>
+                <td id="col19" onclick="highlightColumn(this)">~</td>
+                <td id="col20" onclick="highlightColumn(this)">3</td>
+                <td id="col21" onclick="highlightColumn(this)">3</td>
+                <td id="col22" onclick="highlightColumn(this)">3</td>
+                <td id="col23" onclick="highlightColumn(this)">~</td>
+                <td id="col24" onclick="highlightColumn(this)"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="text" id="countInput1">
+    <button onclick="changeCount(1)">MII-FS219-O</button>
+
+    <input type="text" id="countInput2">
+    <button onclick="changeCount(2)">MII-FT003-O</button>
+
+    <input type="text" id="countInput3">
+    <button onclick="changeCount(3)">AHM-FW092-O</button>
+
+    <input type="text" id="countInput4">
+    <button onclick="changeCount(4)">AHM-FP157-O</button>
+
+    <input type="text" id="countInput5">
+    <button onclick="changeCount(5)">AHM-FC170-2-O</button>
+
+    <input type="text" id="countInput6">
+    <button onclick="changeCount(6)">AHM-FP005-O</button>
+
+    <input type="text" id="countInput7">
+    <button onclick="changeCount(7)">AHM-FP035-O</button>
+
+    <br>
+
+    <input type="text" id="countInput8">
+    <button onclick="changeCount(8)">AHM-FP058-O</button>
+
+    <input type="text" id="countInput9">
+    <button onclick="changeCount(9)">AHM-FP067-O</button>
+
+    <input type="text" id="countInput10">
+    <button onclick="changeCount(10)">AHM-FP068-O</button>
+
+    <input type="text" id="countInput11">
+    <button onclick="changeCount(11)">AHM-FP069-O</button>
+
+    <input type="text" id="countInput12">
+    <button onclick="changeCount(12)">AHM-FP096-O</button>
+
+    <input type="text" id="countInput13">
+    <button onclick="changeCount(13)">AHM-FS094-O</button>
+
+    <input type="text" id="countInput14">
+    <button onclick="changeCount(14)">CHN-FR052-O</button>
+
+    <br>
+
+    <input type="text" id="countInput15">
+    <button onclick="changeCount(15)">CHN-FL022-O</button>
+
+    <input type="text" id="countInput16">
+    <button onclick="changeCount(16)">PRI-FP156-O</button>
+
+    <input type="text" id="countInput17">
+    <button onclick="changeCount(17)">AHM-FP135-O</button>
+
+    <input type="text" id="countInput18">
+    <button onclick="changeCount(18)">AHM-FP140-O</button>
+
+    <input type="text" id="countInput19">
+    <button onclick="changeCount(19)">KBT-FP084-O</button>
+
+    <input type="text" id="countInput20">
+    <button onclick="changeCount(20)">AHM-FC183-O</button>
+
+    <input type="text" id="countInput21">
+    <button onclick="changeCount(21)">AHM-FC185-O</button>
+
+    <br>
+
+    <input type="text" id="countInput22">
+    <button onclick="changeCount(22)">AHM-FC186-O</button>
+
+    <input type="text" id="countInput23">
+    <button onclick="changeCount(23)">AHM-FG026-O</button>
+
+    <input type="text" id="countInput24">
+    <button onclick="changeCount(24)">Change Count</button>
+
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item">
+                <a class="nav-link" href="citizen.html">Line CITIZEN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="anf.html">Line ANF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="turet.html">Line Turet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cnc.html">Line CNC</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <script src="script.js"> </script>
+    <script>
+
+        // untuk merubah count
+        window.onload = function () {
+            for (var i = 1; i <= 24; i++) {
+                var countValue = localStorage.getItem("countValue" + i);
+                var col = document.getElementById("col" + i);
+
+                if (countValue) {
+                    col.innerText = countValue;
+                }
+            }
+        }
+
+        function changeCount(index) {
+            var countInput = document.getElementById("countInput" + index);
+            var countValue = countInput.value;
+            var col = document.getElementById("col" + index);
+
+            col.innerText = countValue;
+            localStorage.setItem("countValue" + index, countValue);
+        }
+
+    </script>
+</body>
+
+</html>
+
+   

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancing Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>LINE TURET</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" onclick="highlightColumn(this)">TYT-FC118-OB</th>
+                <th scope="col" onclick="highlightColumn(this)">TYT-FH027-OB</th>
+                <th scope="col" onclick="highlightColumn(this)">TYT-FH028-OB</th>
+                <th scope="col" onclick="highlightColumn(this)">TYT-FH040-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FC133-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FC170-1-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FD017-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FP086-3-O</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="col50" onclick="highlightColumn(this)">~</td>
+                <td id="col51" onclick="highlightColumn(this)">~</td>
+                <td id="col52" onclick="highlightColumn(this)">2</td>
+                <td id="col53" onclick="highlightColumn(this)">2</td>
+                <td id="col54" onclick="highlightColumn(this)">~</td>
+                <td id="col55" onclick="highlightColumn(this)">11</td>
+                <td id="col56" onclick="highlightColumn(this)">2</td>
+                <td id="col57" onclick="highlightColumn(this)">~</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" onclick="highlightColumn(this)">CN2-FR015-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS006-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS017-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS018-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS067-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS070-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS071-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS082-O</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="col58" onclick="highlightColumn(this)">~</td>
+                <td id="col59" onclick="highlightColumn(this)">~</td>
+                <td id="col60" onclick="highlightColumn(this)">2</td>
+                <td id="col61" onclick="highlightColumn(this)">~</td>
+                <td id="col62" onclick="highlightColumn(this)">5</td>
+                <td id="col63" onclick="highlightColumn(this)">~</td>
+                <td id="col64" onclick="highlightColumn(this)">~</td>
+                <td id="col65" onclick="highlightColumn(this)">~</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FS204-O</th>
+                <th scope="col" onclick="highlightColumn(this)">KBT-FN003-O</th>
+                <th scope="col" onclick="highlightColumn(this)">AHM-FJ001-O</th>
+                <th scope="col" onclick="highlightColumn(this)">HMI-FS106-1-O</th>
+                <th scope="col" onclick="highlightColumn(this)">KBT-FW017-O</th>
+                <th scope="col" onclick="highlightColumn(this)"></th>
+                <th scope="col" onclick="highlightColumn(this)"></th>
+                <th scope="col" onclick="highlightColumn(this)"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="col66" onclick="highlightColumn(this)">7</td>
+                <td id="col67" onclick="highlightColumn(this)">3</td>
+                <td id="col68" onclick="highlightColumn(this)">~</td>
+                <td id="col69" onclick="highlightColumn(this)">3</td>
+                <td id="col70" onclick="highlightColumn(this)">3</td>
+                <td id="col71" onclick="highlightColumn(this)"></td>
+                <td id="col72" onclick="highlightColumn(this)"></td>
+                <td id="col73" onclick="highlightColumn(this)"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="text" id="countInput50">
+    <button onclick="changeCount(50)">TYT-FC118-OB</button>
+
+    <input type="text" id="countInput51">
+    <button onclick="changeCount(51)">TYT-FH027-OB</button>
+
+    <input type="text" id="countInput52">
+    <button onclick="changeCount(52)">TYT-FH028-OB</button>
+
+    <input type="text" id="countInput53">
+    <button onclick="changeCount(53)">TYT-FH040-O</button>
+
+    <input type="text" id="countInput54">
+    <button onclick="changeCount(54)">AHM-FC133-O</button>
+
+    <input type="text" id="countInput55">
+    <button onclick="changeCount(55)">AHM-FC170-1-O</button>
+
+    <input type="text" id="countInput56">
+    <button onclick="changeCount(56)">AHM-FD017-O</button>
+
+    <br>
+
+    <input type="text" id="countInput57">
+    <button onclick="changeCount(57)">AHM-FP086-3-O</button>
+
+    <input type="text" id="countInput58">
+    <button onclick="changeCount(58)">CN2-FR015-O</button>
+
+    <input type="text" id="countInput59">
+    <button onclick="changeCount(59)">AHM-FS006-O</button>
+
+    <input type="text" id="countInput60">
+    <button onclick="changeCount(60)">AHM-FS017-O</button>
+
+    <input type="text" id="countInput61">
+    <button onclick="changeCount(61)">AHM-FS018-O</button>
+
+    <input type="text" id="countInput62">
+    <button onclick="changeCount(62)">AHM-FS067-O</button>
+
+    <input type="text" id="countInput63">
+    <button onclick="changeCount(63)">AHM-FS070-O</button>
+
+    <br>
+
+    <input type="text" id="countInput64">
+    <button onclick="changeCount(64)">AHM-FS071-O</button>
+
+    <input type="text" id="countInput65">
+    <button onclick="changeCount(65)">AHM-FS082-O</button>
+
+    <input type="text" id="countInput66">
+    <button onclick="changeCount(66)">AHM-FS204-O</button>
+
+    <input type="text" id="countInput67">
+    <button onclick="changeCount(67)">KBT-FN003-O</button>
+
+    <input type="text" id="countInput68">
+    <button onclick="changeCount(68)">AHM-FJ001-O</button>
+
+    <input type="text" id="countInput69">
+    <button onclick="changeCount(69)">HMI-FS106-1-O</button>
+
+    <input type="text" id="countInput70">
+    <button onclick="changeCount(70)">KBT-FW017-O</button>
+
+               
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item">
+                <a class="nav-link" href="citizen.html">Line CITIZEN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="anf.html">Line ANF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="turet.html">Line Turet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cnc.html">Line CNC</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        // untuk merubah count
+        window.onload = function () {
+            for (var i = 50; i <= 70; i++) {
+                var countValue = localStorage.getItem("countValue" + i);
+                var col = document.getElementById("col" + i);
+
+                if (countValue) {
+                    col.innerText = countValue;
+                }
+            }
+        }
+
+        function changeCount(index) {
+            var countInput = document.getElementById("countInput" + index);
+            var countValue = countInput.value;
+            var col = document.getElementById("col" + index);
+
+            col.innerText = countValue;
+            localStorage.setItem("countValue" + index, countValue);
+        }
+
+    </script>
+</body>
+
+</html>
+
